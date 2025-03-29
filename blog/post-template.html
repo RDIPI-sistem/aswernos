@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post - AswernOS</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm py-4 px-6 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-server text-blue-600 text-2xl"></i>
+                <span class="text-xl font-bold text-gray-900">AswernOS</span>
+            </div>
+            <div class="hidden md:flex items-center space-x-6">
+                <button id="darkModeToggle" class="text-gray-500 hover:text-blue-600">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="../index.html" class="text-gray-500 hover:text-blue-600">Home</a>
+                <a href="../about.html" class="text-gray-500 hover:text-blue-600">About</a>
+                <a href="../features.html" class="text-gray-500 hover:text-blue-600">Features</a>
+                <a href="../download.html" class="text-gray-500 hover:text-blue-600">Download</a>
+                <a href="../docs/index.html" class="text-gray-500 hover:text-blue-600">Docs</a>
+                <a href="../contact.html" class="text-gray-500 hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post Content -->
+    <main class="flex-grow py-16 bg-white">
+        <div class="max-w-3xl mx-auto px-6">
+            <article>
+                <header class="mb-12">
+                    <h1 class="text-4xl font-bold mb-4">Getting Started with AswernOS</h1>
+                    <div class="flex items-center text-gray-500">
+                        <span class="mr-4">Published: March 28, 2025</span>
+                        <span>By: AswernOS Team</span>
+                    </div>
+                </header>
+                
+                <div class="prose max-w-none">
+                    <p class="text-lg mb-6">Welcome to AswernOS! This guide will help you get started with our modern operating system.</p>
+                    
+                    <h2 class="text-2xl font-semibold mb-4">Installation</h2>
+                    <p class="mb-4">Follow these steps to install AswernOS on your machine:</p>
+                    <ol class="list-decimal pl-6 mb-6 space-y-2">
+                        <li>Download the latest version from our <a href="../download.html" class="text-blue-600">download page</a></li>
+                        <li>Create a bootable USB drive</li>
+                        <li>Boot from the USB and follow the installation wizard</li>
+                    </ol>
+                    
+                    <h2 class="text-2xl font-semibold mb-4">First Boot</h2>
+                    <p class="mb-4">After installation, you'll be greeted with our modern desktop environment:</p>
+                    <img src="https://images.unsplash.com/photo-1639762681057-408e52192e55?w=900&auto=format" 
+                         alt="AswernOS desktop" 
+                         class="rounded-lg mb-6">
+                    
+                    <h2 class="text-2xl font-semibold mb-4">Next Steps</h2>
+                    <p>Check out our <a href="../docs/index.html" class="text-blue-600">documentation</a> for advanced configuration options and tips.</p>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 AswernOS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
