@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас - AswernOS</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm py-4 px-6 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-server text-blue-600 text-2xl"></i>
+                <span class="text-xl font-bold text-gray-900">AswernOS</span>
+            </div>
+            <div class="hidden md:flex items-center space-x-6">
+                <div class="relative group">
+                    <button class="text-gray-500 hover:text-blue-600 flex items-center">
+                        <i class="fas fa-globe mr-1"></i>
+                        <span class="language-current">RU</span>
+                    </button>
+                    <div class="absolute hidden group-hover:block bg-white shadow-md rounded-md mt-1 py-1 w-20 z-50">
+                        <a href="../index.html" class="language-option block w-full text-left px-4 py-1 hover:bg-gray-100">English</a>
+                        <a href="../es/index.html" class="language-option block w-full text-left px-4 py-1 hover:bg-gray-100">Español</a>
+                        <a href="../fr/index.html" class="language-option block w-full text-left px-4 py-1 hover:bg-gray-100">Français</a>
+                        <a href="index.html" class="language-option block w-full text-left px-4 py-1 hover:bg-gray-100 font-medium">Русский</a>
+                    </div>
+                </div>
+                <button id="darkModeToggle" class="text-gray-500 hover:text-blue-600">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="index.html" class="text-gray-500 hover:text-blue-600" data-translate="home">Главная</a>
+                <a href="about.html" class="text-gray-900 font-medium hover:text-blue-600" data-translate="about">О нас</a>
+                <a href="features.html" class="text-gray-500 hover:text-blue-600" data-translate="features">Возможности</a>
+                <a href="download.html" class="text-gray-500 hover:text-blue-600" data-translate="download">Скачать</a>
+                <a href="docs/index.html" class="text-gray-500 hover:text-blue-600" data-translate="docs">Документация</a>
+                <a href="blog/index.html" class="text-gray-500 hover:text-blue-600" data-translate="blog">Блог</a>
+                <a href="community.html" class="text-gray-500 hover:text-blue-600" data-translate="community">Сообщество</a>
+                <a href="support.html" class="text-gray-500 hover:text-blue-600" data-translate="support">Поддержка</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <main class="flex-grow py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h1 class="text-4xl font-bold mb-8" data-translate="about">О компании AswernOS</h1>
+            
+            <div class="prose max-w-none">
+                <p class="text-lg mb-6">AswernOS - это современная операционная система, разработанная для обеспечения высокой производительности, безопасности и удобства использования.</p>
+                
+                <h2 class="text-2xl font-semibold mb-4">Наша миссия</h2>
+                <p class="mb-6">Мы стремимся создать операционную систему, которая сочетает в себе мощь, простоту и элегантность, предоставляя пользователям исключительный опыт работы с компьютером.</p>
+                
+                <h2 class="text-2xl font-semibold mb-4">Наша команда</h2>
+                <p class="mb-6">Над AswernOS работает международная команда опытных разработчиков, дизайнеров и инженеров, увлеченных созданием качественного программного обеспечения.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 AswernOS. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="../js/main.js"></script>
+</body>
+</html>
